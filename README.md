@@ -17,4 +17,4 @@ It uses a clean, scalable, and developer-friendly tech stack with fast performan
 
 ## Eleganza Live Site
 Access the deployed version here:  
- https://eleganza.vercel.app/
+ https://eleganza-green.vercel.app/
