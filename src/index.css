@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 32 15% 93%;
+    --foreground: 0 0% 15%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 271 81% 20%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 38 70% 55%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 32 15% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 348 83% 47%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 32 15% 85%;
+    --input: 32 15% 85%;
+    --ring: 271 81% 20%;
+
+    --radius: 0.5rem;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+  }
+
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 32 15% 93%;
+
+    --card: 0 0% 16%;
+    --card-foreground: 32 15% 93%;
+
+    --popover: 0 0% 16%;
+    --popover-foreground: 32 15% 93%;
+
+    --primary: 271 81% 35%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 38 70% 55%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 32 15% 70%;
+
+    --accent: 348 83% 47%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 271 81% 50%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
