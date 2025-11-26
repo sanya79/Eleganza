@@ -15,3 +15,6 @@ It uses a clean, scalable, and developer-friendly tech stack with fast performan
 - **shadcn-ui** — Beautiful reusable components  
 - **Tailwind CSS** — Utility-first styling system  
 
+## Eleganza Live Site
+Access the deployed version here:  
+ https://eleganza.vercel.app/
